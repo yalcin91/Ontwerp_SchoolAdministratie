@@ -1,0 +1,143 @@
+﻿<Window x:Class="SchoolAdministratie.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolAdministratie.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Background="#FF307EAE">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Background="#FF307EAE">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Background="#FF307EAE" Grid.Row="0" Grid.Column="0" Text="HO" FontWeight="Bold"
+                     FontSize="25" FontStyle="Normal" VerticalAlignment="Top" Foreground="White"/>
+                <TextBlock Background="#FF307EAE" Grid.Row="1" Grid.Column="0" Text="GENT." FontWeight="Bold"
+                     FontSize="25" FontStyle="Normal" VerticalAlignment="Top" Foreground="White" />
+            </Grid>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="ADMIN" FontWeight="Bold" VerticalAlignment="Bottom"
+                     FontSize="35" FontStyle="Normal" Foreground="White" Height="44"/>
+            <Menu Background="#FF307EAE" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" >
+                <MenuItem Header="            _Bestand"   FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
+                    <MenuItem Header="Sluiten" Click="MenuItem_Sluiten_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/close.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="        _Beheer"   FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
+                    <MenuItem Header="Opleidingen" Click="MenuItem_Opleidingen_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/opleidingen.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Vakken" Click="MenuItem_Vakken_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/vakken.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Lessen" Click="MenuItem_Lessen_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/lessen.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Docenten" Click="MenuItem_Docenten_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/docenten.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Studenten" Click="MenuItem_Studenten_Click" Foreground="Black">
+                        <MenuItem.Icon>
+                            <Image Source="/SchoolAdministratie.WPF;component/Images/studenten.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Resultaten" Click="MenuItem_Resultaten_Click" Foreground="Black">
+                            <MenuItem.Icon>
+                                <Image Source="/SchoolAdministratie.WPF;component/Images/resultaten.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Grid.Column="0">
+                
+               
+               
+                
+                
+                
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Border Grid.Row="4" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/studenten.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Studenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Border Grid.Row="1" Grid.Column="1" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/vakken.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Vakken" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Border Grid.Row="5" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/resultaten.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Resultaten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Border Grid.Row="3" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/docenten.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Docenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Border Grid.Row="2" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/lessen.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Lessen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Border Grid.Row="0" Grid.Column="0" Margin="5" BorderThickness="1" BorderBrush="#FF000000">
+                    <StackPanel Margin="10">
+                        <Image Source="/Images/opleidingen.png" Margin="5" Visibility="Visible"/>
+                        <Label Content="Opleidingen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold"></Label>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
