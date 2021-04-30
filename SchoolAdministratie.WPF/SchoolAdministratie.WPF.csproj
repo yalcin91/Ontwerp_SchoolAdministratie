@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\afmelden.png" />
     <None Remove="Images\Blok.png" />
     <None Remove="Images\close.png" />
     <None Remove="Images\docenten.png" />
@@ -23,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\afmelden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Blok.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -62,11 +66,6 @@
     <Content Include="Images\vakken.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="LoginPage\" />
-    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>
