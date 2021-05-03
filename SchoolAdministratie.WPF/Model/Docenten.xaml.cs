@@ -23,5 +23,25 @@ namespace SchoolAdministratie.WPF.Model
         {
             InitializeComponent();
         }
+
+        private void Docent_Aanmaken_Click(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Overzicht_Docenten_Click(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Docent_Aanmaken_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Overzicht_Docenten_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

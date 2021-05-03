@@ -1,4 +1,5 @@
-﻿using SchoolAdministratie.WPF.Model;
+﻿using SchoolAdministratie.WPF.LoginPage;
+using SchoolAdministratie.WPF.Model;
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace SchoolAdministratie.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Login _Login;
         private Docenten _Docenten;
         private Lessen _Lessen;
         private Vakken _Vakken;
@@ -39,6 +41,7 @@ namespace SchoolAdministratie.WPF
             _Studenten = new Studenten();
             _Resultaten = new Resultaten();
             _Opleidingen = new Opleidingen();
+            _Login = new Login();
             Closing += MainWindow_Closing;
             _Docenten.Closing += _Closing;
             _Lessen.Closing += _Closing;
@@ -49,9 +52,11 @@ namespace SchoolAdministratie.WPF
 
         }
 
+        private bool shutDown = false;
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+            shutDown = true;
         }
 
         private void _Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -62,6 +67,8 @@ namespace SchoolAdministratie.WPF
                 return null;
             }, null);
             e.Cancel = true;
+            if (shutDown == true) { Hide(); }
+            else { this.Show(); }
         }
 
         private void MenuItem_Sluiten_Click(object sender, RoutedEventArgs e)
@@ -71,32 +78,39 @@ namespace SchoolAdministratie.WPF
 
         private void MenuItem_Opleidingen_Click(object sender, RoutedEventArgs e)
         {
-            if (_Opleidingen != null) _Opleidingen.Show();
+            if (_Opleidingen != null) {_Opleidingen.Show(); this.Hide(); }
         }
 
         private void MenuItem_Vakken_Click(object sender, RoutedEventArgs e)
         {
-            if (_Vakken != null) _Vakken.Show();
+            if (_Vakken != null) {_Vakken.Show(); this.Hide(); }
         }
 
         private void MenuItem_Lessen_Click(object sender, RoutedEventArgs e)
         {
-            if (_Lessen != null) _Lessen.Show();
+            if (_Lessen != null) {_Lessen.Show(); this.Hide(); }
         }
 
         private void MenuItem_Docenten_Click(object sender, RoutedEventArgs e)
         {
-            if (_Docenten != null) _Docenten.Show();
+            if (_Docenten != null) { _Docenten.Show(); this.Hide(); }
         }
+
 
         private void MenuItem_Studenten_Click(object sender, RoutedEventArgs e)
         {
-            if (_Studenten != null) _Studenten.Show();
+            if (_Studenten != null) { _Studenten.Show(); this.Hide(); }
         }
 
         private void MenuItem_Resultaten_Click(object sender, RoutedEventArgs e)
         {
-            if (_Resultaten != null) _Resultaten.Show();
+            if (_Resultaten != null) { _Resultaten.Show(); this.Hide(); }
+        }
+
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            _Login.Show();
+            this.Hide();
         }
     }
 }

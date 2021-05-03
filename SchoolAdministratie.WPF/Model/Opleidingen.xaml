@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolAdministratie.WPF.Model"
         mc:Ignorable="d"
-        Title="Opleidingen" Height="450" Width="800">
+        Title="Opleidingen" Height="380" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Background="#FF307EAE">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Background="#FF307EAE">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Background="#FF307EAE" Grid.Row="0" Grid.Column="0" Text="HO" FontWeight="Bold"
+                     FontSize="25" FontStyle="Normal" VerticalAlignment="Top" Foreground="White"/>
+                <TextBlock Background="#FF307EAE" Grid.Row="1" Grid.Column="0" Text="GENT." FontWeight="Bold"
+                     FontSize="25" FontStyle="Normal" VerticalAlignment="Top" Foreground="White" />
+            </Grid>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="ADMIN" FontWeight="Bold" VerticalAlignment="Bottom"
+                     FontSize="35" FontStyle="Normal" Foreground="White" Height="44"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="/Images/OPLEIDINGEN.png" Margin="5" Height="25"></Image>
+            <TextBlock Grid.Column="1" Text="OPLEIDINGEN" FontWeight="Bold" FontSize="25" VerticalAlignment="Center" Margin="5"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Margin="10" Width="auto" >
+                <StackPanel Margin="10">
+                    <Image Source="/Images/plus.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Opleiding_Aanmaken_Click"/>
+                    <Button Background="#FF58B0E6" Width="120" Content="opleiding aanmaken" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                            Click="Opleiding_Aanmaken_Click" FontSize="11" FontStyle="Italic"></Button>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" Margin="10" Width="auto" >
+                <StackPanel Margin="10">
+                    <Image Source="/Images/view.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Overzicht_Opleidingen_Click"/>
+                    <Button Background="#FF58B0E6" Width="120" Content="overzicht opleidingen" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                            Click="Overzicht_Opleidingen_Click" FontSize="11" FontStretch="Normal" FontStyle="Italic"></Button>
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

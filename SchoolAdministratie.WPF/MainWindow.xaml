@@ -74,7 +74,7 @@
             <Grid Grid.Row="0" Grid.Column="3">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <Label Content="Ingelogd als Yalcin" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" FontSize="12"/>
-                    <Image Source="/SchoolAdministratie.WPF;component/Images/afmelden.png" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="6"></Image>
+                    <Image Source="/SchoolAdministratie.WPF;component/Images/afmelden.png" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="6" MouseLeftButtonUp="Image_MouseLeftButtonUp"></Image>
                 </StackPanel>
             </Grid>
         </Grid>

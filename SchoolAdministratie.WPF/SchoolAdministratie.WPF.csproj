@@ -14,6 +14,7 @@
     <None Remove="Images\lessen.png" />
     <None Remove="Images\money.png" />
     <None Remove="Images\opleidingen.png" />
+    <None Remove="Images\plus.png" />
     <None Remove="Images\product.png" />
     <None Remove="Images\resultaten.png" />
     <None Remove="Images\Stekker.png" />
@@ -21,6 +22,7 @@
     <None Remove="Images\studenten.png" />
     <None Remove="Images\user.png" />
     <None Remove="Images\vakken.png" />
+    <None Remove="Images\view.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +47,9 @@
     <Content Include="Images\opleidingen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\plus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\product.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -64,6 +69,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\vakken.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\view.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
