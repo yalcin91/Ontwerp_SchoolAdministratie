@@ -48,14 +48,14 @@
             <Border Grid.Column="0" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/plus.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Les_Aanmaken_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="les aanmaken" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="les aanmaken" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Les_Aanmaken_Click" FontSize="11" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>
             <Border Grid.Column="1" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/view.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Overzicht_Lessen_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="overzicht lessen" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="overzicht lessen" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Overzicht_Lessen_Click" FontSize="11" FontStretch="Normal" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>

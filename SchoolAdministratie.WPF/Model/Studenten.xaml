@@ -16,8 +16,6 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Row="0" Grid.Column="0" Background="#FF307EAE">
                 <Grid.RowDefinitions>
@@ -48,14 +46,14 @@
             <Border Grid.Column="0" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/plus.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Student_Aanmaken_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="student inschrijven" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="student inschrijven" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Student_Aanmaken_Click" FontSize="11" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>
             <Border Grid.Column="1" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/view.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Overzicht_Studenten_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="overzicht studenten" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="overzicht studenten" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Overzicht_Studenten_Click" FontSize="11" FontStretch="Normal" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>

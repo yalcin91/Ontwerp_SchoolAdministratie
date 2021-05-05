@@ -1,8 +1,10 @@
 ﻿using SchoolAdministratie.WPF.LoginPage;
 using SchoolAdministratie.WPF.Model;
+using SchoolAdministratie.WPF.Toevoegen;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +33,7 @@ namespace SchoolAdministratie.WPF
         private Studenten _Studenten;
         private Resultaten _Resultaten;
         private Opleidingen _Opleidingen;
+        private StudentInschrijven _StudentInschrijven;
 
         public MainWindow()
         {
@@ -42,21 +45,24 @@ namespace SchoolAdministratie.WPF
             _Resultaten = new Resultaten();
             _Opleidingen = new Opleidingen();
             _Login = new Login();
+            _StudentInschrijven = new StudentInschrijven();
             Closing += MainWindow_Closing;
+            _Login.Closing += MainWindow_Closing;
             _Docenten.Closing += _Closing;
             _Lessen.Closing += _Closing;
             _Vakken.Closing += _Closing;
             _Studenten.Closing += _Closing;
             _Resultaten.Closing += _Closing;
             _Opleidingen.Closing += _Closing;
-
+            //_StudentInschrijven.Closing += _Closing;
         }
 
         private bool shutDown = false;
-        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        public void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
             shutDown = true;
+            _Studenten.shutdown2 = true;
         }
 
         private void _Closing(object sender, System.ComponentModel.CancelEventArgs e)

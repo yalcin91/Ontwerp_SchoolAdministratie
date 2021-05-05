@@ -31,14 +31,14 @@
             <TextBlock Grid.Row="0" Grid.Column="1" Text="ADMIN" FontWeight="Bold" VerticalAlignment="Bottom"
                      FontSize="35" FontStyle="Normal" Foreground="White" Height="44"/>
             <Menu Background="#FF307EAE" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" >
-                <MenuItem Header="            _Bestand"   FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
+                <MenuItem Header="            _Bestand" Cursor="Hand"  FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
                     <MenuItem Header="Sluiten" Click="MenuItem_Sluiten_Click" Foreground="Black">
                         <MenuItem.Icon>
                             <Image Source="/SchoolAdministratie.WPF;component/Images/close.png"/>
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
-                <MenuItem Header="        _Beheer"   FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
+                <MenuItem Header="        _Beheer" Cursor="Hand"  FontSize="14" FontWeight="Bold" Height="31" Width="auto" Foreground="White">
                     <MenuItem Header="Opleidingen" Click="MenuItem_Opleidingen_Click" Foreground="Black">
                         <MenuItem.Icon>
                             <Image Source="/SchoolAdministratie.WPF;component/Images/opleidingen.png"/>
@@ -74,7 +74,8 @@
             <Grid Grid.Row="0" Grid.Column="3">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <Label Content="Ingelogd als Yalcin" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" FontSize="12"/>
-                    <Image Source="/SchoolAdministratie.WPF;component/Images/afmelden.png" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="6" MouseLeftButtonUp="Image_MouseLeftButtonUp"></Image>
+                    <Image Source="/SchoolAdministratie.WPF;component/Images/afmelden.png" HorizontalAlignment="Right" VerticalAlignment="Top" Cursor="Hand" 
+                           Margin="6" MouseLeftButtonUp="Image_MouseLeftButtonUp"></Image>
                 </StackPanel>
             </Grid>
         </Grid>
@@ -89,50 +90,56 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Grid.Column="0">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/studenten.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Studenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Studenten_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Studenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Studenten_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>
             <Grid Grid.Row="0" Grid.Column="1">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/vakken.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Vakken" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Vakken_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Vakken" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Vakken_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>
             <Grid Grid.Row="0" Grid.Column="2">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/resultaten.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Resultaten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Resultaten_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Resultaten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Resultaten_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>
             <Grid Grid.Row="1" Grid.Column="0">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/docenten.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Docenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Docenten_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Docenten" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Docenten_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>
             <Grid Grid.Row="1" Grid.Column="1">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/lessen.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Lessen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Lessen_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Lessen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Lessen_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>
             <Grid Grid.Row="1" Grid.Column="2">
-                <Border Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
+                <Border CornerRadius="5" Margin="5" Width="100" BorderThickness="1" BorderBrush="#FF000000">
                     <StackPanel Margin="10">
                         <Image Source="/Images/opleidingen.png" Margin="5" Visibility="Visible"/>
-                        <Button Content="Opleidingen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" Click="MenuItem_Opleidingen_Click"></Button>
+                        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Opleidingen" BorderBrush="Black" BorderThickness="1" FontWeight="Bold" 
+                                Click="MenuItem_Opleidingen_Click" Background="#FF58B0E6"></Button>
                     </StackPanel>
                 </Border>
             </Grid>

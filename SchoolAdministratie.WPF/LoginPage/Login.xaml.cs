@@ -27,7 +27,7 @@ namespace SchoolAdministratie.WPF.LoginPage
         public Login()
         {
             InitializeComponent();
-            doubleanimation.Completed += Doubleanimation_Completed;
+            doubleanimation.Completed += Doubleanimation_Completed;  
         }
 
         private void timer_Tick(object sender, EventArgs e)

@@ -48,14 +48,14 @@
             <Border Grid.Column="0" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/plus.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Reslutaat_Ingeven_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="resultaten ingeven" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="resultaten ingeven" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Reslutaat_Ingeven_Click" FontSize="11" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>
             <Border Grid.Column="1" Margin="10" Width="auto" >
                 <StackPanel Margin="10">
                     <Image Source="/Images/view.png" Margin="5" Width="20" Visibility="Visible" MouseLeftButtonUp="Overzicht_Resultaten_Click"/>
-                    <Button Background="#FF58B0E6" Width="120" Content="overzicht resultaten" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
+                    <Button Style="{DynamicResource RoundedButtonStyle}" Background="#FF58B0E6" Width="120" Content="overzicht resultaten" BorderBrush="Black" BorderThickness="1" FontWeight="DemiBold" 
                             Click="Overzicht_Resultaten_Click" FontSize="11" FontStretch="Normal" FontStyle="Italic"></Button>
                 </StackPanel>
             </Border>
