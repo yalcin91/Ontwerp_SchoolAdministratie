@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -50,6 +51,13 @@ namespace SchoolAdministratie.WPF.Toevoegen
             if (string.IsNullOrEmpty(txtPostcode.Text)) txtBlPostcode.Visibility = Visibility.Visible; else txtBlPostcode.Visibility = Visibility.Hidden;
             if (string.IsNullOrEmpty(txtWoonplaats.Text)) txtBlWoonplaats.Visibility = Visibility.Visible; else txtBlWoonplaats.Visibility = Visibility.Hidden;
             if (string.IsNullOrEmpty(txtEmailAdres.Text)) txtBlEmailadres.Visibility = Visibility.Visible; else txtBlEmailadres.Visibility = Visibility.Hidden;
+
+            //if(txtHuisnummer.Text.ToCharArray(0, txtHuisnummer.Text.Length).Contains(typeof(string)))
+        }
+
+        private void txt_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text); ;
         }
     }
 }

@@ -40,7 +40,7 @@ namespace SchoolAdministratie.WPF.LoginPage
 
         private void Doubleanimation_Completed(object sender, EventArgs e)
         {
-            if (txtbUsername.Text.Trim() == "y" && txtPasword.Password == "123")
+            if (txtbUsername.Text.Trim() == "yalcin" && txtPasword.Password == "123")
             {
                 //MessageBox.Show("Welkom Yalcin", "Perfect");
                 prgbLogin.Value = 0;

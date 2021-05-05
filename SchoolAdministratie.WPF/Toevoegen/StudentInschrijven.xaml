@@ -100,7 +100,7 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="Huisnummer" FontSize="14"/>
-                <TextBox Grid.Column="1" x:Name="txtHuisnummer" Width="40" HorizontalAlignment="Left"/>
+                <TextBox PreviewTextInput="txt_PreviewTextInput" Grid.Column="1" x:Name="txtHuisnummer" Width="40" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="txtBlHuisnummer" Grid.Column="2" Text="Gelieve een huisnummer in te vullen" Foreground="Red" Visibility="Hidden" Margin="10,0,0,0"/>
             </Grid>
             <Grid Grid.Row="6" Margin="5">
@@ -110,7 +110,7 @@
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="Postcode" FontSize="14"/>
-                <TextBox Grid.Column="1" x:Name="txtPostcode" Width="40" HorizontalAlignment="Left"/>
+                <TextBox PreviewTextInput="txt_PreviewTextInput" Grid.Column="1" x:Name="txtPostcode" Width="40" HorizontalAlignment="Left"/>
                 <TextBlock x:Name="txtBlPostcode" Grid.Column="2" Text="Gelieve een postcode in te vullen" Foreground="Red" Visibility="Hidden" Margin="10,0,0,0"/>
             </Grid>
             <Grid Grid.Row="7" Margin="5">

@@ -46,7 +46,7 @@
             <Label Grid.Column="0" HorizontalAlignment="Left" Content="Password " FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
             <PasswordBox Grid.Column="1" x:Name="txtPasword" MinWidth="170" Height="23" Background="#FFE7DBDB"  ToolTip="enter password" KeyDown="txtPasword_KeyDown" Margin="5"/>
         </Grid>
-        <Button Grid.Row="5" Grid.Column="1" Width="87" Content="Login" Background="#FF747474" Click="btnLogin_Click_1"/>
+        <Button Grid.Row="5" Grid.Column="1" Width="87" Content="Login" Background="#FF747474" Click="btnLogin_Click_1" Style="{DynamicResource RoundedButtonStyle}" FontWeight="Bold" />
         <ProgressBar Name="prgbLogin" Grid.Row="6" Grid.Column="1" MinWidth="255" MinHeight="40" HorizontalAlignment="Center" 
                      VerticalAlignment="Center" Visibility="Hidden"  Minimum="0" Maximum="100" Foreground="#FF307EAE" Margin="5">
         </ProgressBar>
